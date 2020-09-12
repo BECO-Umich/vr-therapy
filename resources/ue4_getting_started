@@ -1,0 +1,16 @@
+To begin working in the Unreal Engine 4 the first step is to download the Epic Games Launcher, then to download UE4 from within the launcher.
+
+When creating your first project, you may get stuck at 39% with your cpu running at 100% performance. This is not a bug, you just need to wait
+and after the first project this shouldn't happen again. When you get into the actual project it will compile some additional resources.
+
+Then UE4 will walk you through a short tutorial introducing several parts of the UI.
+
+After this tutorial it'll be pretty overwhelming what to work on next. The unreal engine website has an online learning section with many useful tutorials.
+
+https://www.unrealengine.com/en-US/onlinelearning-courses
+
+I've been building some more confidence by following along with these tutorials. Following the prompt to get started and looking at your dashboard,
+some beginning tutorials will have been picked out like a tour through the portal, an introduction, and a first hour guide for UE4. Some other 
+useful tutorials include those related to blueprints like "Blueprints - Essential Concepts" or "Converting Blueprints to C++."
+
+It's encouraged to explore anything that seems useful or interesting and can potentially help our final product.
