@@ -1,0 +1,30 @@
+Unreal Engine 4 vs Unity
+
+Unreal Engine
+-More realistic rendering
+-More demanding to run
+-C++
+-Used by larger studios, supports workflows for larger groups of people
+-Open source, access to source code
+-Better for polished graphics
+
+
+Unity
+-Soft-Dreamy look
+-Easier to run
+-C#
+-Better for small community projects
+-Black box, mysterious, can’t access source code
+-Better for apps and 2d stuff
+
+Main differences: Unreal Engine has c++ which most people at Umich are more familiar with, while Unity uses c# which is simpler but less commonly
+used in Umich. Unreal Engine is open source and you can see the code where Unity is not and you have to do stuff in their framework. Unity
+was more common in the past but they are pretty close now in that they are both used and both have a lot of educational resources / tutorials.
+Unreal engine used to be clearly better for graphics but Unity has made a lot of improvements and they’re pretty even now in that as well. Unity
+is less demanding than unreal engine but unreal engine generally looks and runs better than unity. I think unreal engine wins out as the
+coding language is more familiar to UMICH students, it’s open source giving us a better understanding and more control over it, and it’s generally
+seen as a more professional platform for larger studios compared to the more indie use of Unity, and it is generally better for 3d vr stuff while
+unity is better for 2d and apps. While unreal engine is more demanding, it also is more robust.
+
+Unreal engine offers 2 different types of licenses: Publishing and creators. Both are free to use but publishing will let us monetize it if that’s
+something we potentially want to do.
