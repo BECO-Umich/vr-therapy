@@ -1,0 +1,105 @@
+*Largely inspired by the EECS 482 git tutorial at https://web.eecs.umich.edu/~manosk/eecs482/git-tutorial/, with simplifications and some additions I think would
+have helped me when I was first using github in a group after reading only the 482 tutorial. I recommend looking through the 482 git tutorial as well as they go
+into more detail about the purpose and benifits of github and include very helpful diagrams of how github and the workflow on it looks.
+
+Before you start:
+
+  If you haven't already, create a github account so we can add you to the BECO-Umich github organization.
+
+      *Note*
+      We might have to change certain permissions on the repo or add people to it to allow people to be able to clone / push to it.
+      This is something we can work out as we get the repo up and running.
+          
+  If you need a linux shell on your local machine, follow the "command line tools" portion of the EECS 280 setup tutorial at the following link:
+
+      https://eecs280staff.github.io/p1-stats/setup.html#command-line-tools
+  
+  This will allow you to run a linux operating system in a shell on your computer and access the command line to run commands for github and other programs.
+          
+Cloning this repository locally:
+
+  Get a working copy of this repository on your local machine. Use the following command:
+  
+      git clone https://github.com:BECO-Umich/vr-therapy
+      
+  You should now have a folder called vr-therapy which holds the working copy and a local repository named origin. You are now ready to add and commit files
+  and changes from your local repo to the master branch on github.
+
+Adding files to be committed:
+  
+  Before you commit a change to your local repo, you must first prepare the changes you are going to commit. To add a file or change to the staging area, use
+  the following command:
+  
+      git add <example_file.txt>
+      
+  If you now run the following command:
+  
+      git status
+      
+  You will be able to how your local code differs from the code in your local repo, and more importantly which changes are staged for your next commit. If you
+  want to remove a file that you don't need anymore like an old executable or the old version of a renamed file, run the following command:
+  
+      git rm <example_file.txt>
+      
+  If you made some changes that you want to undo, for example to avoid a merge conflict or to pull someone else's code first, run the following command:
+  
+      git restore <example_file.txt>
+      
+  This will restore that file to the version of it that is saved in your local repo.
+  
+Making a commit
+
+  The prior commands add and remove files to the staging area, but don't change your local repo. To commit a change to the local repo, run the following command:
+  
+      git commit
+      
+  You might get a window to add information about this commit. If prompted, add a descriptive message of what changes are being made, and then confirm the commit.
+  Another way to accomplish this is by running the following command:
+  
+      git commit -m "example commit message:
+      
+  If there are no merge conflicts, you now have updated your local repo with the changes queued in the staging area.
+  
+Pushing changes to the master branch:
+
+  When your local repo differs from the master branch on github, you need to push the changes so that others can pull them and work with the latest version of the
+  source code. Coordinating pushes and pulls are a neccesary part of the work flow to ensure there are as few merge conflicts as possible. To push the changes in
+  your local repo, run the following command:
+   
+      git push
+   
+  If there is no merge conflicts, then the master branch is now updated with your changes and others can pull to update their own repos.
+   
+Pulling changes to your local repo:
+
+  If someone else makes a change to the source files, it's best to pull early so you're working on the same copy of the code. You should always pull before starting
+  to work so that you don't accidently redo work or make changes to outdated code. To pull from the master branch to your local repo, use the following command:
+  
+      git pull
+      
+  If your local repo has some changes that don't conflict with the lines of new changes in the pull, you may see github conduct a merge recursively that will add the
+  pulled changes to the changes you made locally. This merge will count as a commit and should be pushed early.
+  
+Dealing with merge conflicts:
+
+  When coding with many people on the same repo, it's inevitable that more than one person will try to make changes to the same lines of code. When this happens,
+  you get a merge conflict that must be resolved before you can continue forward in the normal workflow. The merge conflict can happen on a push or pull command.
+  You might try to push and have it rejected, along with a message stating that the master repo has changes that you don't have on your local repo. Most of the time,
+  you can try to pull and hopefully see the two sets of changes merged recursively. If this happens, you can push your commit along with the merge as an additional
+  commit.
+  
+  However, sometimes on a pull you may see a message that the automatic merge failed, prompting you to fix the changes. To fix them, you need to open the files that
+  failed the automatic merge. Github will add the two sets of changes into the code with some extra formatting junk around it. Some code editors and ides allow you to
+  choose one change by clicking a command that pops up underneath the formatting junk, otherwise you need to manually edit the code to include one of the two changes.
+  Then you can git add that file to stage the conflict fix, and commit to conclude the merge.
+  
+  In more extreme cases, I've found that if there are a ton of conflicts, it's sometimes easier to just copy the folder of the repo code in a second location, restore
+  the changes that were causing the merge conflict, pull, and re-do your changes manually. Another way to brute-force a fix is to re-clone the master branch in a second
+  location. You can also download a zip file of the master repo code from the repo page in your browser. In the case that someone pushed a questionable commit that rolled
+  back some changes, deleted some files, or caused new bugs, you can go to the repo in your browser and add file > upload files in order to drag and drop files that will
+  either be added straight to the repo or overwrite files with the same name. This is useful if the master branch gets too messy and you just want to restore it to an
+  earlier version.
+ 
+  
+ 
+  
